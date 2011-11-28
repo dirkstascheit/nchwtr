@@ -1,0 +1,8 @@
+# 1-WEEK EXPIRES HEADER
+ExpiresActive On
+ExpiresDefault A0
+ExpiresDefault A604800
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|swf)$">
+ExpiresDefault "access plus 4 weeks"
+</FilesMatch>
+Header append Cache-Control "public"
